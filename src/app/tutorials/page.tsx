@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Calculator, List, ShieldCheck } from 'lucide-react'
-import { TutorialCard } from 'tutorial-components'
+import { TutorialCard } from '@/components/tutorials'
 import { tutorials } from '@/lib/tutorials-data'
 import { CtaSection } from '@/components/cta-section'
 

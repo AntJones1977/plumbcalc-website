@@ -1,4 +1,4 @@
-import type { Tutorial } from 'tutorial-components'
+import type { Tutorial } from '@/components/tutorials'
 
 export const tutorials: Tutorial[] = [
   {

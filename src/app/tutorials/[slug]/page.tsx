@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { TutorialPlayer } from 'tutorial-components'
+import { TutorialPlayer } from '@/components/tutorials'
 import { tutorials } from '@/lib/tutorials-data'
 import { CtaSection } from '@/components/cta-section'
 
