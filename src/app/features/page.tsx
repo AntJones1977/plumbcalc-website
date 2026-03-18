@@ -1,4 +1,4 @@
-import { Bath, Flame, ChefHat, Droplets, Building2, Calculator, ShieldCheck, Thermometer, FileText, Receipt, CalendarDays, AlertTriangle, ClipboardList, Wrench, WifiOff, Lock, BarChart3, Users } from 'lucide-react'
+import { Bath, Flame, ChefHat, Droplets, Building2, Calculator, ShieldCheck, Thermometer, FileText, Receipt, CalendarDays, AlertTriangle, ClipboardList, Wrench, WifiOff, Lock, BarChart3, Users, Shield } from 'lucide-react'
 import { CtaSection } from '@/components/cta-section'
 
 const sections = [
@@ -83,6 +83,22 @@ const sections = [
       'Escalate maintenance callout to full estimate with pre-populated data',
       'Survey wizard collects scope across 8 categories, pre-fills estimators',
       'Dashboard alerts for upcoming jobs, overdue work, and open callouts',
+    ],
+  },
+  {
+    id: 'team-management',
+    title: 'Team Management & Roles',
+    subtitle: 'Invite your team, control who sees what',
+    description: 'Add team members with email invitations, assign one of four roles, and manage access with 31 granular permissions. Each person sees only the features and data they need.',
+    icon: Shield,
+    features: [
+      '4 roles: Owner, Admin, Plumber, Viewer — each with tailored access levels',
+      '31 granular permissions covering estimates, certificates, invoicing, settings, and more',
+      'Email invitation flow with secure 72-hour expiry tokens',
+      'Team management dashboard for owners to add, remove, and reassign roles',
+      'API-level permission enforcement on all 30+ routes',
+      'Role-based sidebar navigation — users only see what they have access to',
+      'Scales from sole trader (1 user) to growing teams (up to 10)',
     ],
   },
   {

@@ -5,6 +5,7 @@ export const tiers = [
     annual: 190,
     description: 'For sole traders who need fast, accurate estimates',
     features: [
+      { label: '1 user', included: true },
       { label: 'Unlimited estimates', included: true },
       { label: '4 job types (Bathroom, Kitchen, Hot Water, Central Heating)', included: true },
       { label: 'Parametric auto-calculation engine', included: true },
@@ -51,7 +52,9 @@ export const tiers = [
     description: 'For growing teams who need everything',
     features: [
       { label: 'Everything in Professional, plus:', included: true },
-      { label: 'Up to 10 users', included: true },
+      { label: 'Up to 10 team members', included: true },
+      { label: 'Role-based access control (Owner, Admin, Plumber, Viewer)', included: true },
+      { label: 'Team management dashboard', included: true },
       { label: 'Unlimited maintenance callouts', included: true },
       { label: 'Job scheduling & tracking', included: true },
       { label: 'CP12 expiry email reminders (batch)', included: true },

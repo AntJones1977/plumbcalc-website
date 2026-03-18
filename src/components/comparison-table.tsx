@@ -25,6 +25,7 @@ const rows: ComparisonRow[] = [
   { feature: 'Survey-to-estimate auto-creation', plumbcalc: true, tradify: false, fergus: false, servicem8: false },
   { feature: 'CP12 expiry email reminders', plumbcalc: true, tradify: false, fergus: false, servicem8: false },
   { feature: 'Data encryption (AES-256)', plumbcalc: true, tradify: false, fergus: false, servicem8: false },
+  { feature: 'Team management & role-based access', plumbcalc: true, tradify: false, fergus: false, servicem8: false },
 ]
 
 function Cell({ value }: { value: CellValue }) {

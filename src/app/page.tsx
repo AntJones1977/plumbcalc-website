@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Calculator, ShieldCheck, Wifi, WifiOff, FileText, Flame, Bath, Droplets, ChefHat, Wrench, Thermometer, ClipboardList, BarChart3, Receipt, CalendarDays, AlertTriangle, Users } from 'lucide-react'
+import { Calculator, ShieldCheck, Wifi, WifiOff, FileText, Flame, Bath, Droplets, ChefHat, Wrench, Thermometer, ClipboardList, BarChart3, Receipt, CalendarDays, AlertTriangle, Users, Shield } from 'lucide-react'
 import { FeatureCard } from '@/components/feature-card'
 import { PricingCard } from '@/components/pricing-card'
 import { PricingToggle } from '@/components/pricing-toggle'
@@ -69,10 +69,10 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-[#2C3E50] mb-3">Why plumbers choose PlumbCalc</h2>
-            <p className="text-gray-500">Three things that set us apart from every competitor</p>
+            <p className="text-gray-500">Four things that set us apart from every competitor</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center p-6">
               <div className="h-16 w-16 rounded-2xl bg-[#2C3E50]/5 flex items-center justify-center mx-auto mb-4">
                 <Calculator className="h-8 w-8 text-[#2C3E50]" />
@@ -102,6 +102,16 @@ export default function HomePage() {
                 Install on your phone, tablet, or laptop. Create estimates in a basement with no signal. Everything syncs when you reconnect. No app store needed.
               </p>
             </div>
+
+            <div className="text-center p-6">
+              <div className="h-16 w-16 rounded-2xl bg-purple-50 flex items-center justify-center mx-auto mb-4">
+                <Shield className="h-8 w-8 text-purple-600" />
+              </div>
+              <h3 className="text-lg font-bold text-[#2C3E50] mb-2">Multi-User Team Access</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Invite your team and control exactly what each person can see and do. Four roles, 31 permissions, and a management dashboard keep everyone on track.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -121,6 +131,7 @@ export default function HomePage() {
             <FeatureCard icon={FileText} title="Quotes & Invoicing" description="Share professional quotes via unique links. Customers accept online — no login needed." highlights={['Email notifications on send/response', 'Auto-expiry with configurable validity', 'Quote-to-invoice conversion']} />
             <FeatureCard icon={AlertTriangle} title="Maintenance Callouts" description="Log faults, diagnose, quote, and track reactive maintenance from phone call to payment." highlights={['11 fault categories with urgency levels', '9-step status workflow', 'Escalate to full estimate']} />
             <FeatureCard icon={BarChart3} title="Analytics & Dashboard" description="Revenue tracking, conversion funnels, job type breakdowns, and monthly trends at a glance." highlights={['Open callout alerts', 'Overdue invoice warnings', 'Expiring CP12 dashboard cards']} />
+            <FeatureCard icon={Shield} title="Team Management & Roles" description="Invite team members, assign roles (Owner, Admin, Plumber, Viewer), and control access with 31 granular permissions." highlights={['Email invitations with secure tokens', 'Role-based sidebar navigation', 'Team management dashboard']} />
           </div>
         </div>
       </section>
