@@ -1,0 +1,102 @@
+export const tiers = [
+  {
+    name: 'Starter',
+    monthly: 19,
+    annual: 190,
+    description: 'For sole traders who need fast, accurate estimates',
+    features: [
+      { label: 'Unlimited estimates', included: true },
+      { label: '4 job types (Bathroom, Kitchen, Hot Water, Central Heating)', included: true },
+      { label: 'Parametric auto-calculation engine', included: true },
+      { label: '95-item price database', included: true },
+      { label: 'Pipework calculator (20-slot)', included: true },
+      { label: 'Print-to-PDF estimates', included: true },
+      { label: 'Offline/PWA mode', included: true },
+      { label: '50 customer records', included: true },
+      { label: '5 shareable quotes/month', included: true },
+      { label: 'Daily auto-backups', included: true },
+      { label: 'Heat loss calculator', included: false },
+      { label: 'Gas certificates', included: false },
+      { label: 'Invoicing', included: false },
+      { label: 'Maintenance callouts', included: false },
+    ],
+  },
+  {
+    name: 'Professional',
+    monthly: 39,
+    annual: 390,
+    popular: true,
+    description: 'For established plumbers who want the full toolkit',
+    features: [
+      { label: 'Everything in Starter, plus:', included: true },
+      { label: 'Up to 3 users', included: true },
+      { label: 'Full Refurbishment estimator', included: true },
+      { label: 'Heat loss calculator (BS EN 12831)', included: true },
+      { label: 'Gas certificates (CP12, CP6, CD10, CD11)', included: true },
+      { label: 'Appliance registry', included: true },
+      { label: 'Full price list CRUD + CSV/XLSX import', included: true },
+      { label: 'Unlimited customers', included: true },
+      { label: 'Unlimited shareable quotes + email sending', included: true },
+      { label: 'Survey wizard', included: true },
+      { label: 'Invoicing & payment tracking', included: true },
+      { label: '10 maintenance callouts/month', included: true },
+      { label: 'Full analytics dashboard', included: true },
+      { label: 'Your company branding on prints', included: true },
+    ],
+  },
+  {
+    name: 'Business',
+    monthly: 69,
+    annual: 690,
+    description: 'For growing teams who need everything',
+    features: [
+      { label: 'Everything in Professional, plus:', included: true },
+      { label: 'Up to 10 users', included: true },
+      { label: 'Unlimited maintenance callouts', included: true },
+      { label: 'Job scheduling & tracking', included: true },
+      { label: 'CP12 expiry email reminders (batch)', included: true },
+      { label: 'Maintenance-to-estimate escalation', included: true },
+      { label: 'Backup download & restore', included: true },
+      { label: 'Priority email support (same day)', included: true },
+      { label: 'Advanced analytics & reporting', included: true },
+      { label: 'AES-256 data encryption', included: true },
+      { label: 'Audit logging', included: true },
+      { label: 'GDPR data export', included: true },
+    ],
+  },
+]
+
+export const faqItems = [
+  {
+    question: 'Is there a free trial?',
+    answer: 'Yes! Every plan includes a 14-day free trial with full access to all features. No credit card required to start.',
+  },
+  {
+    question: 'Can I change plans later?',
+    answer: 'Absolutely. You can upgrade or downgrade at any time. When upgrading, you get immediate access to new features. When downgrading, changes take effect at your next billing date.',
+  },
+  {
+    question: 'What happens to my data if I cancel?',
+    answer: 'Your data remains available for 30 days after cancellation. You can export all your data (estimates, customers, certificates) at any time. We never delete your data without warning.',
+  },
+  {
+    question: 'Do I need to install anything?',
+    answer: 'No. PlumbCalc runs in your web browser (Chrome, Edge, Safari). You can also install it as a Progressive Web App on your device for offline access — no app store needed.',
+  },
+  {
+    question: 'Is my data secure?',
+    answer: 'Yes. All personal data is encrypted with AES-256-GCM encryption. We use HTTPS, rate limiting, CSRF protection, and daily automated backups. Your data is stored in the UK and fully GDPR compliant.',
+  },
+  {
+    question: 'Can I import my existing price list?',
+    answer: 'Yes, on Professional and Business plans. Upload CSV or XLSX files from Screwfix, Toolstation, City Plumbing, or any merchant. PlumbCalc auto-detects columns and maps categories.',
+  },
+  {
+    question: 'Does it work offline?',
+    answer: 'Yes. PlumbCalc is a Progressive Web App that works offline on all plans. Create estimates, save customers, and log data without an internet connection. Everything syncs automatically when you reconnect.',
+  },
+  {
+    question: 'How are gas certificates different from competitors?',
+    answer: 'PlumbCalc includes all 4 Gas Safe certificate types (CP12, CP6, CD10, CD11) with edit-in-draft, auto-calculated next inspection dates, batch expiry reminders, and encrypted PII storage. Most competitors charge extra or only support CP12.',
+  },
+]
