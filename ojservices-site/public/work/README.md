@@ -1,7 +1,8 @@
 # Job photos
 
-Drop your job photos in this folder, then tell Claude (or edit
-`src/components/work-gallery.tsx`) to display them.
+Drop your job photos in this folder — they appear in the website's **Our Work**
+gallery automatically (no code changes needed). The file name becomes the
+caption, so name them nicely: `bathroom-refit.jpg` shows as "Bathroom Refit".
 
 Tips for good, fast-loading photos:
 - **Format:** JPG or WebP
