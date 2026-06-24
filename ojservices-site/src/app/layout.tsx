@@ -39,6 +39,12 @@ const jsonLd = {
   telephone: site.phone,
   email: site.email,
   url: `https://${site.domain}`,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: site.town,
+    addressRegion: site.region,
+    addressCountry: 'GB',
+  },
   areaServed: site.areaList,
 }
 

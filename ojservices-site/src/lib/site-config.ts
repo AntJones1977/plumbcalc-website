@@ -22,9 +22,11 @@ export const site = {
   // WhatsApp number, international format, digits only.
   whatsapp: '447305971841',
 
-  // TODO: where you work.
-  area: 'your town & surrounding areas',
-  areaList: ['Your Town', 'Nearby Town', 'Another Village', 'Wider County'],
+  // Where OJ Services works.
+  area: 'Broxbourne & the surrounding counties',
+  town: 'Broxbourne',
+  region: 'Hertfordshire',
+  areaList: ['Broxbourne', 'Hoddesdon', 'Cheshunt', 'Waltham Cross', 'Ware', 'Hertford', 'Harlow', 'Enfield', 'Epping'],
 
   // TODO: set your real number, or remove references to it in the components.
   yearsExperience: '15+',
