@@ -54,7 +54,7 @@ export function Hero() {
               <ShieldCheck className="h-4 w-4 text-[#E0701A]" /> Free, no-obligation quotes
             </span>
             <span className="inline-flex items-center gap-1.5">
-              <ShieldCheck className="h-4 w-4 text-[#E0701A]" /> {site.yearsExperience} years&apos; experience
+              <ShieldCheck className="h-4 w-4 text-[#E0701A]" /> Local &amp; reliable
             </span>
           </div>
         </div>
