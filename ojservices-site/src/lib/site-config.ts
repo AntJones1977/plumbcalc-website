@@ -11,20 +11,22 @@ export const site = {
   // Short strap line shown under the logo / in the footer.
   tagline: 'Plumbing, bathrooms & property work, done properly',
 
-  // TODO: your real phone number — shown on every "Call" button.
-  phone: '01234 567890',
-  // TODO: same number in international format for the click-to-call link.
-  phoneHref: 'tel:+441234567890',
+  // Shown on every "Call" button.
+  phone: '07305 971841',
+  // Same number in international format for the click-to-call link.
+  phoneHref: 'tel:+447305971841',
 
-  // TODO: the email leads should go to.
-  email: 'hello@ojservices.co.uk',
+  // The email leads should go to.
+  email: 'Ollie@ojservices.co.uk',
 
-  // TODO: your WhatsApp number, international format, digits only (e.g. 447123456789).
-  whatsapp: '447123456789',
+  // WhatsApp number, international format, digits only.
+  whatsapp: '447305971841',
 
-  // TODO: where you work.
-  area: 'your town & surrounding areas',
-  areaList: ['Your Town', 'Nearby Town', 'Another Village', 'Wider County'],
+  // Where OJ Services works.
+  area: 'Broxbourne & the surrounding counties',
+  town: 'Broxbourne',
+  region: 'Hertfordshire',
+  areaList: ['Broxbourne', 'Hoddesdon', 'Cheshunt', 'Waltham Cross', 'Ware', 'Hertford', 'Harlow', 'Enfield', 'Epping'],
 
   // TODO: set your real number, or remove references to it in the components.
   yearsExperience: '15+',
