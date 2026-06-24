@@ -7,6 +7,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL(`https://${site.domain}`),
+  alternates: { canonical: '/' },
   title: `${site.name} — Plumbing, Bathrooms, Landscaping & Property Services`,
   description: `${site.name}: plumbing, bathroom renovations, landscaping, internal build-outs and emergency callouts across ${site.area}. Fully insured. Free, no-obligation quotes.`,
   keywords: [
