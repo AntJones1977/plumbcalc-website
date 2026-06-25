@@ -1,11 +1,11 @@
 {
-  "name": "plumbcalc-website",
+  "name": "ojservices-site",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3002",
+    "dev": "next dev -p 3003",
     "build": "next build",
-    "start": "next start -p 3002"
+    "start": "next start -p 3003"
   },
   "dependencies": {
     "next": "^15.5.12",

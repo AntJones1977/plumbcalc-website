@@ -31,12 +31,12 @@ function captionFromFile(file: string): string {
 }
 
 const placeholders = [
-  { category: 'Bathroom', title: 'Full bathroom refit', gradient: 'from-[#243C49] to-[#0f1f29]' },
-  { category: 'Landscaping', title: 'Garden transformation', gradient: 'from-[#2f4a36] to-[#16261b]' },
-  { category: 'Plumbing', title: 'Kitchen re-plumb', gradient: 'from-[#1b3a4a] to-[#0f1f29]' },
-  { category: 'Renovation', title: 'Internal build-out', gradient: 'from-[#4a3a24] to-[#241b10]' },
-  { category: 'Bathroom', title: 'Walk-in wet room', gradient: 'from-[#243C49] to-[#0f1f29]' },
-  { category: 'Landscaping', title: 'Patio & decking', gradient: 'from-[#2f4a36] to-[#16261b]' },
+  { category: 'Boiler', title: 'New boiler installation', gradient: 'from-[#243C49] to-[#0f1f29]' },
+  { category: 'Heating', title: 'Central heating upgrade', gradient: 'from-[#1b3a4a] to-[#0f1f29]' },
+  { category: 'Boiler', title: 'Boiler service & repair', gradient: 'from-[#243C49] to-[#0f1f29]' },
+  { category: 'Plumbing', title: 'Bathroom & wet room', gradient: 'from-[#1b3a4a] to-[#0f1f29]' },
+  { category: 'Heating', title: 'Radiator replacement', gradient: 'from-[#243C49] to-[#0f1f29]' },
+  { category: 'Plumbing', title: 'Leak repair', gradient: 'from-[#1b3a4a] to-[#0f1f29]' },
 ]
 
 export function WorkGallery() {

@@ -1,52 +1,80 @@
-import Link from 'next/link'
-import { Wrench } from 'lucide-react'
+import { Phone, Mail, MapPin, ShieldCheck } from 'lucide-react'
+import { site } from '@/lib/site-config'
+
+const services = ['Boiler installation', 'Boiler servicing & repair', 'Central heating', 'Gas safety & landlord certs', 'General plumbing', 'Emergency callouts']
+const navLinks = [
+  { href: '#services', label: 'Services' },
+  { href: '#work', label: 'Our Work' },
+  { href: '#why', label: 'Why Us' },
+  { href: '#areas', label: 'Areas Covered' },
+  { href: '#contact', label: 'Get a Quote' },
+]
 
 export function Footer() {
   return (
-    <footer className="bg-[#2C3E50] text-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
+    <footer className="bg-[#14222B] text-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+          <div className="md:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="h-8 w-8 rounded-lg bg-white/10 flex items-center justify-center">
-                <Wrench className="h-4 w-4 text-white" />
+              <div className="h-9 w-9 rounded-lg bg-[#E0701A] flex items-center justify-center">
+                <span className="text-sm font-extrabold tracking-tight text-white">OJ</span>
               </div>
-              <span className="text-lg font-bold">PlumbCalc</span>
+              <span className="text-lg font-bold">{site.name}</span>
             </div>
-            <p className="text-sm text-white/60 leading-relaxed">
-              Professional estimating software for UK plumbing and heating contractors.
+            <p className="text-sm text-white/60 leading-relaxed">{site.tagline}.</p>
+            <p className="mt-4 inline-flex items-center gap-1.5 text-xs text-white/50">
+              <ShieldCheck className="h-4 w-4 text-[#E0701A]" />
+              {site.gasSafeRegistered
+                ? `Gas Safe registered${site.gasSafeNumber ? ` · ${site.gasSafeNumber}` : ''} · Fully insured`
+                : 'Fully insured & qualified'}
             </p>
           </div>
 
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-wide mb-3 text-white/80">Product</h3>
+            <h3 className="font-semibold text-sm uppercase tracking-wide mb-3 text-white/80">Services</h3>
             <ul className="space-y-2 text-sm text-white/60">
-              <li><Link href="/features" className="hover:text-white transition-colors">Features</Link></li>
-              <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
-              <li><Link href="/tutorials" className="hover:text-white transition-colors">Tutorials</Link></li>
-              <li><Link href="https://app.plumbcalc.com" className="hover:text-white transition-colors">Sign In</Link></li>
+              {services.map(s => (
+                <li key={s}>{s}</li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-wide mb-3 text-white/80">Company</h3>
+            <h3 className="font-semibold text-sm uppercase tracking-wide mb-3 text-white/80">Explore</h3>
             <ul className="space-y-2 text-sm text-white/60">
-              <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
-              <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+              {navLinks.map(l => (
+                <li key={l.href}>
+                  <a href={l.href} className="hover:text-white transition-colors">
+                    {l.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-wide mb-3 text-white/80">Legal</h3>
-            <ul className="space-y-2 text-sm text-white/60">
-              <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link></li>
+            <h3 className="font-semibold text-sm uppercase tracking-wide mb-3 text-white/80">Get in touch</h3>
+            <ul className="space-y-2.5 text-sm text-white/60">
+              <li>
+                <a href={site.phoneHref} className="inline-flex items-center gap-2 hover:text-white transition-colors">
+                  <Phone className="h-4 w-4 text-[#E0701A]" /> {site.phone}
+                </a>
+              </li>
+              <li>
+                <a href={`mailto:${site.email}`} className="inline-flex items-center gap-2 hover:text-white transition-colors">
+                  <Mail className="h-4 w-4 text-[#E0701A]" /> {site.email}
+                </a>
+              </li>
+              <li className="inline-flex items-center gap-2">
+                <MapPin className="h-4 w-4 text-[#E0701A]" /> {site.area}
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/10 mt-10 pt-6 text-center text-xs text-white/40">
-          <p>&copy; {new Date().getFullYear()} PlumbCalc. All rights reserved. UK Trade Estimating Software.</p>
+          <p>&copy; {new Date().getFullYear()} {site.name}. All rights reserved.</p>
         </div>
       </div>
     </footer>

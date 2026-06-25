@@ -3,7 +3,7 @@ import { site } from '@/lib/site-config'
 
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
-export const alt = `${site.name} — plumbing, bathrooms & property services`
+export const alt = `${site.name} — gas, heating & plumbing services`
 
 export default function OgImage() {
   return new ImageResponse(
@@ -40,10 +40,10 @@ export default function OgImage() {
           <div style={{ fontSize: 56, fontWeight: 800 }}>{site.name}</div>
         </div>
         <div style={{ display: 'flex', fontSize: 66, fontWeight: 800, lineHeight: 1.1, maxWidth: 940 }}>
-          Plumbing, bathrooms & property work, done properly
+          Gas, heating & plumbing, done properly
         </div>
         <div style={{ display: 'flex', fontSize: 30, color: '#F2A461', marginTop: 36 }}>
-          Plumbing · Bathrooms · Landscaping · Emergency callouts
+          Boilers · Central heating · Gas safety · Emergency callouts
         </div>
       </div>
     ),

@@ -1,4 +1,4 @@
-import { ArrowRight, Phone, ShieldCheck, Star } from 'lucide-react'
+import { ArrowRight, Phone, ShieldCheck } from 'lucide-react'
 import { site } from '@/lib/site-config'
 
 export function Hero() {
@@ -18,17 +18,20 @@ export function Hero() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 lg:py-28">
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 bg-[#E0701A]/15 text-[#F2A461] text-xs font-semibold px-3 py-1.5 rounded-full mb-6 ring-1 ring-[#E0701A]/30">
-            <Star className="h-3.5 w-3.5" /> Trusted local tradespeople
+            <ShieldCheck className="h-3.5 w-3.5" />
+            {site.gasSafeRegistered ? 'Gas Safe registered engineer' : 'Trusted local engineer'}
+            {site.gasSafeRegistered && site.gasSafeNumber ? ` · No. ${site.gasSafeNumber}` : ''}
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Plumbing, bathrooms &amp; property work,{' '}
+            Gas, heating &amp; plumbing,{' '}
             <span className="text-[#E0701A]">done properly</span>
           </h1>
 
           <p className="text-lg text-white/70 mb-8 leading-relaxed">
-            From emergency leaks to full bathroom renovations, landscaping and internal build-outs,{' '}
-            {site.name} handles it all across {site.area}. Tidy workmanship, honest prices, no surprises.
+            New boiler installations, servicing &amp; repairs, central heating, gas safety
+            checks and emergency no-heat callouts — plus trusted local plumbing. {site.name}{' '}
+            keeps your home warm, safe and running across {site.area}. Honest prices, no surprises.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -47,14 +50,16 @@ export function Hero() {
           </div>
 
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-8 text-sm text-white/60">
+            {site.gasSafeRegistered && (
+              <span className="inline-flex items-center gap-1.5">
+                <ShieldCheck className="h-4 w-4 text-[#E0701A]" /> Gas Safe registered
+              </span>
+            )}
             <span className="inline-flex items-center gap-1.5">
               <ShieldCheck className="h-4 w-4 text-[#E0701A]" /> Fully insured
             </span>
             <span className="inline-flex items-center gap-1.5">
               <ShieldCheck className="h-4 w-4 text-[#E0701A]" /> Free, no-obligation quotes
-            </span>
-            <span className="inline-flex items-center gap-1.5">
-              <ShieldCheck className="h-4 w-4 text-[#E0701A]" /> Local &amp; reliable
             </span>
           </div>
         </div>

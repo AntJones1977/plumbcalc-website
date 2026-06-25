@@ -13,9 +13,11 @@ type FormState = {
 }
 
 const serviceOptions = [
+  'Boiler install / replacement',
+  'Boiler service / repair',
+  'Central heating',
+  'Gas safety / landlord certificate',
   'General plumbing',
-  'Bathroom / renovation',
-  'Landscaping / restoration',
   'Emergency callout',
   'Something else',
 ]
@@ -25,7 +27,7 @@ export function Contact() {
     name: '',
     phone: '',
     postcode: '',
-    service: 'General plumbing',
+    service: 'Boiler install / replacement',
     message: '',
   })
 

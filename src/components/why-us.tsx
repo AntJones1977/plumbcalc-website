@@ -8,10 +8,10 @@ interface Reason {
 }
 
 const reasons: Reason[] = [
-  { icon: ShieldCheck, title: 'Fully insured & qualified', text: 'Work carried out to a high standard, fully insured for your peace of mind.' },
+  { icon: ShieldCheck, title: 'Gas Safe registered', text: 'Gas and boiler work carried out safely, legally and to standard by a Gas Safe registered engineer.' },
   { icon: Wallet, title: 'Free, honest quotes', text: 'Clear, no-obligation pricing up front. No hidden costs, no nasty surprises.' },
   { icon: Sparkles, title: 'Clean & tidy', text: 'We respect your home, protect your floors and clear up properly when we finish.' },
-  { icon: BadgeCheck, title: 'One team, many trades', text: 'Plumbing, bathrooms, landscaping and building — all handled under one roof.' },
+  { icon: BadgeCheck, title: 'Heating & plumbing under one roof', text: 'Boilers, central heating and plumbing all handled by one trusted local engineer.' },
   { icon: Clock, title: 'Reliable & on time', text: 'We turn up when we say we will and keep you updated throughout the job.' },
   { icon: MapPin, title: 'Local & trusted', text: 'A familiar local name, building a reputation one happy customer at a time.' },
 ]
