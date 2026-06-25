@@ -38,7 +38,10 @@ export const site = {
   gasSafeRegistered: true,
   gasSafeNumber: '', // e.g. '123456' — leave blank until you add the real one
 
-  domain: 'ojservices.co.uk',
+  // Primary host (used for canonical URLs, sitemap, OpenGraph and JSON-LD).
+  // This is the www address because that's the validated primary in Vercel;
+  // the bare ojservices.co.uk redirects to it. Email stays on the bare domain.
+  domain: 'www.ojservices.co.uk',
 } as const
 
 // Pre-built WhatsApp "click to chat" link.
