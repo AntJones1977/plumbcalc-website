@@ -7,9 +7,9 @@ import { Quote, Star } from 'lucide-react'
 // ---------------------------------------------------------------------------
 
 const testimonials = [
-  { quote: 'Turned up on time, did a brilliant job on our bathroom and left everything spotless. We could not be happier.', name: 'Customer name', place: 'Your Town' },
-  { quote: 'Sorted a leak for us same day and the price was very fair. Friendly, professional and reliable.', name: 'Customer name', place: 'Nearby Town' },
-  { quote: 'Completely transformed our garden. Great communication throughout and the finish is superb.', name: 'Customer name', place: 'Wider County' },
+  { quote: 'Fitted a new combi boiler for us — turned up on time, tidy work and talked us through everything. Our heating has never been better.', name: 'Customer name', place: 'Your Town' },
+  { quote: 'Came out the same day when our heating packed in. Diagnosed and fixed it quickly at a fair price. Highly recommend.', name: 'Customer name', place: 'Nearby Town' },
+  { quote: 'Annual boiler service and a landlord gas certificate sorted with no fuss. Friendly, professional and reliable.', name: 'Customer name', place: 'Wider County' },
 ]
 
 export function Testimonials() {

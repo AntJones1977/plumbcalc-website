@@ -9,7 +9,7 @@ export const site = {
   name: 'OJ Services',
 
   // Short strap line shown under the logo / in the footer.
-  tagline: 'Plumbing, bathrooms & property work, done properly',
+  tagline: 'Gas, heating & plumbing services, done properly',
 
   // Shown on every "Call" button.
   phone: '07305 971841',
@@ -30,6 +30,13 @@ export const site = {
 
   // TODO: set your real number, or remove references to it in the components.
   yearsExperience: '15+',
+
+  // Gas Safe registration. While `gasSafeRegistered` is true the site shows a
+  // "Gas Safe registered" badge. The registration NUMBER only appears once you
+  // fill it in below — so the live site stays tidy until you add the real one.
+  // 👉 TODO: add your real Gas Safe registration number (placeholder is blank).
+  gasSafeRegistered: true,
+  gasSafeNumber: '', // e.g. '123456' — leave blank until you add the real one
 
   domain: 'ojservices.co.uk',
 } as const

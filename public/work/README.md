@@ -2,13 +2,13 @@
 
 Drop your job photos in this folder — they appear in the website's **Our Work**
 gallery automatically (no code changes needed). The file name becomes the
-caption, so name them nicely: `bathroom-refit.jpg` shows as "Bathroom Refit".
+caption, so name them nicely: `new-boiler.jpg` shows as "New Boiler".
 
 Tips for good, fast-loading photos:
 - **Format:** JPG or WebP
 - **Size:** resize to about 1600px on the long edge and keep each file under
   ~1 MB. Phone photos are often 3–5 MB — too big for the repo and slow on mobile.
-- **Names:** keep them clear, e.g. `bathroom-1.jpg`, `garden-patio.jpg`,
+- **Names:** keep them clear, e.g. `boiler-install.jpg`, `radiator-fit.jpg`,
   `leak-repair.jpg`. Before/after pairs work great.
 
 ## ⚠️ Videos do NOT go here
